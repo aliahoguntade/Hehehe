@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mywebsite</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #1a365d;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #4a5568;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 700px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    th {
+      background: #2b6cb0;
+      color: white;
+      font-size: 1.2rem;
+      padding: 16px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    td {
+      padding: 14px 18px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover td {
+      background: #f7fafc;
+    }
+    .course-label {
+      font-weight: 700;
+      text-align: center;
+      background: #edf2f7;
+      color: #2d3748;
+      width: 25%;
+    }
+    .course-name {
+      color: #2d3748;
+      font-weight: 500;
+    }
+    .duration {
+      color: #718096;
+      text-align: right;
+      width: 20%;
+    }
+    @media (max-width: 600px) {
+      table {
+        font-size: 0.9rem;
+      }
+      th, td {
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Mywebsite</h1>
+  <h2>This is an example of table</h2>
+
+  <table>
+    <tr>
+      <th colspan="3">Computer courses</th>
+    </tr>
+    <tr>
+      <td rowspan="3" class="course-label">Courses</td>
+      <td class="course-name">CCC</td>
+      <td class="duration">3 Months</td>
+    </tr>
+    <tr>
+      <td class="course-name">MCAD</td>
+      <td class="duration">6 Months</td>
+    </tr>
+    <tr>
+      <td class="course-name">Graphic Design</td>
+      <td class="duration">3 Months</td>
+    </tr>
+    <tr>
+      <th colspan="3">Long term courses</th>
+    </tr>
+    <tr>
+      <td rowspan="2" class="course-label">Courses</td>
+      <td class="course-name">B Level</td>
+      <td class="duration">1 year</td>
+    </tr>
+    <tr>
+      <td class="course-name">BCA</td>
+      <td class="duration">3 years</td>
+    </tr>
+  </table>
+</body>
+</html>
